@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*
+========================================================
+	Litebox: a small alternitive to other lightboxes
+========================================================
+*/
+
+.litebox {
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
