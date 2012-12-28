@@ -1,33 +1,27 @@
 /*
 ========================================================
-	Litebox: a small alternitive to other lightboxes
+    Litebox: a small alternitive to other lightboxes
 ========================================================
 */
 
 @charset "UTF-8";
 
-@-webkit-keyframes target {
-    from { opacity: 0; }
-    50% { opacity: .5; }
-    to { opacity: 1; }
+@-webkit-keyframes fadelite {
+	from { opacity: 0; }
+	50% { opacity: .5; }
+	to { opacity: 1; }
 }
 
-@-moz-keyframes target {
+@-moz-keyframes fadelite {
 	from { opacity: 0; }
     50% { opacity: .5; }
     to { opacity: 1; }
 }
 
-@-o-keyframes target {
+@keyframes fadelite {
 	from { opacity: 0; }
-    50% { opacity: .5; }
-    to { opacity: 1; }
-}
-
-@keyframes target {
-	from { opacity: 0; }
-    50% { opacity: .5; }
-    to { opacity: 1; }
+	50% { opacity: .5; }
+	to { opacity: 1; }
 }
 
 .litebox {
@@ -39,14 +33,12 @@
 	width: 100%;
 	display: none;
 	opacity: 0;
-	
 }
 
 .litebox:target {
-	-webkit-animation:target .2s linear;
-	-moz-animation:target .2s linear;
-	-o-animation:target .2s linear;
-	animation:target 1s linear;
+	-webkit-animation: fadelite .2s linear;
+	-moz-animation: fadelite .2s linear;
+	animation: fadelite 1s linear;
 	display: block;
 	opacity: 1;
 }
